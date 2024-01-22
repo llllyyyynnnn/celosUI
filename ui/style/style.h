@@ -21,6 +21,9 @@ namespace celosia::style {
 		inline static ImVec2 size_padding = {20,10};
 		inline static int border_size = 1;
 		inline static int border_size_animated = 2;
+
+		inline static float tab_switch_animation_max = 16;
+		inline static int tab_switch_animation_speed = 2;
 	}
 	namespace groupbox {
 		inline static float height = titlebar::height / 2;
@@ -28,8 +31,11 @@ namespace celosia::style {
 	}
 
 	namespace themes {
+		enum e_tab_title_style { full, minimal };
+
 		struct t_theme {
 			std::string name;
+			e_tab_title_style tab_style;
 
 			ImColor background;
 			ImColor background_darker;

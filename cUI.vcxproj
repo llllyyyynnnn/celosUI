@@ -201,6 +201,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ui\overrides\ImGui\functions\RenderFrameBorderColor.cpp" />
     <ClCompile Include="ui\overrides\ImGui\Scrollbar.cpp" />
+    <ClCompile Include="ui\overrides\ImGui\TabButton.cpp" />
     <ClCompile Include="ui\render\AddRect\FilledHalfRounded.cpp" />
     <ClCompile Include="ui\render\groupbox.cpp" />
     <ClCompile Include="ui\render\AddRect\FilledMultiColorRounded.cpp" />
@@ -209,6 +210,7 @@
     <ClCompile Include="ui\debug\debug.cpp" />
     <ClCompile Include="ui\style\animations.cpp" />
     <ClCompile Include="ui\functions.cpp" />
+    <ClCompile Include="ui\style\tab_switch.cpp" />
     <ClCompile Include="ui\style\theme_setup.cpp" />
     <ClCompile Include="ui\ui.cpp" />
     <ClCompile Include="ui\overrides\ImGui\Button.cpp" />

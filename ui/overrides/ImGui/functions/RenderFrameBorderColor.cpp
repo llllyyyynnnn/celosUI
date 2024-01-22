@@ -1,6 +1,6 @@
 #include "../../../ui.h"
 
-void ImGui::RenderFrameBorderAnimated(const char* label, ImVec2 p_min, ImVec2 p_max, ImColor fill_col, bool border, float rounding)
+void ImGui::RenderFrameBorderAnimated(const char* label, ImVec2 p_min, ImVec2 p_max, ImColor fill_col, bool border, float rounding) // any component using this will be animated with no need for any further setup
 {
     ImGuiContext& g = *GImGui;
     ImGuiWindow* window = g.CurrentWindow;

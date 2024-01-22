@@ -32,7 +32,7 @@ namespace celosia::functions {
 	}
 
 	void update_hotkeys() {
-		//ctodo: remake
+		//ctodo: add input system
 	}
 
 	void spacing(int amount) {

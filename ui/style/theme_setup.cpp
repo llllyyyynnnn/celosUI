@@ -9,12 +9,14 @@ namespace celosia::style {
 			dark.hovered = ImColor(64, 64, 64, 255);
 			dark.held = ImColor(32, 32, 32, 255);
 			dark.frame_border = ImColor(0, 0, 0, 0);
+			dark.tab_style = e_tab_title_style::full;
 		}
 
 		void init_light() {
 			light.background = ImColor(255, 255, 255, 255);
 			light.background_darker = ImColor(200, 200, 200, 255);
 			light.idle = ImColor(0, 0, 0, 255);
+			light.tab_style = e_tab_title_style::full;
 		}
 
 		void initialize(){

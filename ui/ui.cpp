@@ -32,7 +32,7 @@ namespace celosia::ui { // ctodo: github
         D3D::swapchain->Present(1, 0); // Present with vsync, (use 0, 0 for no vsync, although unnecessary because I don't think I'll be needing 1000+ fps for this. Maybe limit it to 60 fps or something even.)
     }
     void main_window() {
-        ImGui::Begin(variables::title, nullptr, ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoTitleBar);
+        ImGui::Begin(variables::title, nullptr, ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoScrollbar);
         ImGui::SetWindowSize(celosia::ui::size);
         ImGui::SetWindowPos(ImVec2(0, 0));
         render::titlebar();
@@ -54,6 +54,8 @@ namespace celosia::ui { // ctodo: github
         }
 
         /* use drawlists here */
+
+        animations::functions::tab_switch();
 
         end();
     }

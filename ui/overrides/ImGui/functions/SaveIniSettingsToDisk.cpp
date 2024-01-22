@@ -2,7 +2,7 @@
 
 void ImGui::SaveIniSettingsToDisk(const char* ini_filename)
 {
-    /*
+    /* extremely annoying, saves unnecessary files that won't ever be used and in the case they are reused they often break more than help
     ImGuiContext& g = *GImGui;
     g.SettingsDirtyTimer = 0.0f;
     if (!ini_filename)

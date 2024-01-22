@@ -2,7 +2,7 @@
 
 void ImGui::LogToFile(int auto_open_depth, const char* filename)
 {
-    /*
+    /* erasing it, i don't want default imgui logs
     ImGuiContext& g = *GImGui;
     if (g.LogEnabled)
         return;

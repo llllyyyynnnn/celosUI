@@ -96,6 +96,12 @@
     <ClCompile Include="ui\render\AddRect\FilledHalfRounded.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ui\style\tab_switch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\overrides\ImGui\TabButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="external\imgui\dx11\imgui_impl_dx11.h">
