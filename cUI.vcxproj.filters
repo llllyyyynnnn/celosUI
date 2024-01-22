@@ -90,12 +90,6 @@
     <ClCompile Include="ui\render\groupbox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ui\render\AddRect\FilledMultiColorRounded.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ui\render\AddRect\FilledHalfRounded.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ui\style\tab_switch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

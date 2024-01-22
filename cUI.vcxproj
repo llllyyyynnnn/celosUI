@@ -204,9 +204,7 @@
     <ClCompile Include="ui\wrappers\ImGui\functions\RenderFrameBorderColor.cpp" />
     <ClCompile Include="ui\wrappers\ImGui\Scrollbar.cpp" />
     <ClCompile Include="ui\wrappers\ImGui\TabButton.cpp" />
-    <ClCompile Include="ui\render\AddRect\FilledHalfRounded.cpp" />
     <ClCompile Include="ui\render\groupbox.cpp" />
-    <ClCompile Include="ui\render\AddRect\FilledMultiColorRounded.cpp" />
     <ClCompile Include="ui\render\sidebar.cpp" />
     <ClCompile Include="ui\render\titlebar.cpp" />
     <ClCompile Include="ui\debug\debug.cpp" />

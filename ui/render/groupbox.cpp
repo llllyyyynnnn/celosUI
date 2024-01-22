@@ -10,12 +10,12 @@ namespace celosia::render {
 		drawlist->AddRectFilled(ImVec2(offset.x, offset.y + (style::groupbox::height / 2)), offset_max, style::themes::active.background_darker, style::general::rounding);
 
 		if (style::themes::active.tab_style == style::themes::e_tab_title_style::full) {
-			render::AddRectFilledMultiColorRounded(drawlist, offset, ImVec2(offset_max.x, offset.y + style::groupbox::height), a, b, 4);
+			ImGui::AddRectFilledMultiColorRounded(drawlist, offset, ImVec2(offset_max.x, offset.y + style::groupbox::height), a, b, 4);
 			return;
 		}
 
 		if (style::themes::active.tab_style == style::themes::e_tab_title_style::minimal) {
-			render::AddRectFilledHalfRounded(drawlist, offset, ImVec2(offset_max.x, offset.y + style::groupbox::height), ImColor(4, 4, 4, 255), 4);
+			ImGui::AddRectFilledHalfRounded(drawlist, offset, ImVec2(offset_max.x, offset.y + style::groupbox::height), ImColor(4, 4, 4, 255), 4);
 			drawlist->AddRectFilledMultiColor(ImVec2(offset.x, offset.y + (style::groupbox::height)-2), ImVec2(offset_max.x, offset.y + (style::groupbox::height)), a, b, b, a); // ctodo: make a func of this
 			return;
 		}
