@@ -38,7 +38,8 @@ namespace celosia::ui { // ctodo: github
         render::titlebar();
         render::sidebar();
 
-        render::groupbox("test");
+        render::begingroupbox("test");
+        render::endgroupbox();
         ImGui::End();
     }
 

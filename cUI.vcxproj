@@ -202,6 +202,7 @@
     <ClCompile Include="ui\overrides\ImGui\functions\RenderFrameBorderColor.cpp" />
     <ClCompile Include="ui\overrides\ImGui\Scrollbar.cpp" />
     <ClCompile Include="ui\render\groupbox.cpp" />
+    <ClCompile Include="ui\render\AddRectFilledMultiColorRounded.cpp" />
     <ClCompile Include="ui\render\sidebar.cpp" />
     <ClCompile Include="ui\render\titlebar.cpp" />
     <ClCompile Include="ui\debug\debug.cpp" />
