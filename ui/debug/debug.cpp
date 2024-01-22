@@ -6,4 +6,9 @@ namespace celosia::debug {
 		std::cout << "\033[1;35m" << "[DEBUG] " << "\033[0m" << str << "\n";
 	#endif
 	}
+	void log(int str) {
+#ifdef _DEBUG
+		std::cout << "\033[1;35m" << "[DEBUG] " << "\033[0m" << str << "\n";
+#endif
+	}
 }
