@@ -130,5 +130,4 @@ SaveIniSettingsToDisk
 ButtonEx
 Scrollbar
 UpdateMouseWheel
-
 */
