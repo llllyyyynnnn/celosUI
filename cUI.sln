@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cUI", "cUI.vcxproj", "{FE517587-F30B-421A-B3FC-5359DB3286EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		DebugNoConsole|x64 = DebugNoConsole|x64
+		DebugNoConsole|x86 = DebugNoConsole|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE517587-F30B-421A-B3FC-5359DB3286EC}.Debug|x64.ActiveCfg = Debug|x64
+		{FE517587-F30B-421A-B3FC-5359DB3286EC}.Debug|x64.Build.0 = Debug|x64
+		{FE517587-F30B-421A-B3FC-5359DB3286EC}.Debug|x86.ActiveCfg = Debug|Win32
+		{FE517587-F30B-421A-B3FC-5359DB3286EC}.Debug|x86.Build.0 = Debug|Win32
+		{FE517587-F30B-421A-B3FC-5359DB3286EC}.DebugNoConsole|x64.ActiveCfg = DebugNoConsole|x64
+		{FE517587-F30B-421A-B3FC-5359DB3286EC}.DebugNoConsole|x64.Build.0 = DebugNoConsole|x64
+		{FE517587-F30B-421A-B3FC-5359DB3286EC}.DebugNoConsole|x86.ActiveCfg = DebugNoConsole|Win32
+		{FE517587-F30B-421A-B3FC-5359DB3286EC}.DebugNoConsole|x86.Build.0 = DebugNoConsole|Win32
+		{FE517587-F30B-421A-B3FC-5359DB3286EC}.Release|x64.ActiveCfg = Release|x64
+		{FE517587-F30B-421A-B3FC-5359DB3286EC}.Release|x64.Build.0 = Release|x64
+		{FE517587-F30B-421A-B3FC-5359DB3286EC}.Release|x86.ActiveCfg = Release|Win32
+		{FE517587-F30B-421A-B3FC-5359DB3286EC}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D1F1B33-D65C-4885-B1B8-348FDA8EA6F6}
+	EndGlobalSection
+EndGlobal
