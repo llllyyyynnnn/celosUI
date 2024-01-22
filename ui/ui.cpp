@@ -56,6 +56,7 @@ namespace celosia::ui { // ctodo: github
         /* use drawlists here */
 
         animations::functions::tab_switch();
+        ImGui::TabButton();
 
         end();
     }

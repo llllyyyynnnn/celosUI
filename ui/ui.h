@@ -21,6 +21,7 @@
 #include "style/style.h"
 #include "render/render.h"
 #include "debug/debug.h"
+#include "wrappers/wrappers.h"
 
 #pragma comment(lib, "d3d11.lib")
 

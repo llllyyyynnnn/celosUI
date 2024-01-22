@@ -39,13 +39,13 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ui\overrides\ImGui\functions\LogToFile.cpp">
+    <ClCompile Include="ui\wrappers\ImGui\functions\LogToFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ui\overrides\ImGui\functions\SaveIniSettingsToDisk.cpp">
+    <ClCompile Include="ui\wrappers\ImGui\functions\SaveIniSettingsToDisk.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ui\overrides\ImGui\Button.cpp">
+    <ClCompile Include="ui\wrappers\ImGui\Button.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ui\style\animations.cpp">
@@ -81,10 +81,10 @@
     <ClCompile Include="ui\render\sidebar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ui\overrides\ImGui\Scrollbar.cpp">
+    <ClCompile Include="ui\wrappers\ImGui\Scrollbar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ui\overrides\ImGui\functions\RenderFrameBorderColor.cpp">
+    <ClCompile Include="ui\wrappers\ImGui\functions\RenderFrameBorderColor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ui\render\groupbox.cpp">
@@ -99,7 +99,13 @@
     <ClCompile Include="ui\style\tab_switch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ui\overrides\ImGui\TabButton.cpp">
+    <ClCompile Include="ui\wrappers\ImGui\TabButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\wrappers\ImGui\AddRectFilledHalfRounded.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\wrappers\ImGui\AddRectFilledMultiColorRounded.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -146,7 +152,7 @@
     <ClInclude Include="ui\resources\resources.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ui\overrides\wrappers.h">
+    <ClInclude Include="ui\wrappers\wrappers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

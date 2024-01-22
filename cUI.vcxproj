@@ -199,9 +199,11 @@
     <ClCompile Include="external\imgui\imgui_widgets.cpp" />
     <ClCompile Include="external\imgui\win32\imgui_impl_win32.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="ui\overrides\ImGui\functions\RenderFrameBorderColor.cpp" />
-    <ClCompile Include="ui\overrides\ImGui\Scrollbar.cpp" />
-    <ClCompile Include="ui\overrides\ImGui\TabButton.cpp" />
+    <ClCompile Include="ui\wrappers\ImGui\AddRectFilledHalfRounded.cpp" />
+    <ClCompile Include="ui\wrappers\ImGui\AddRectFilledMultiColorRounded.cpp" />
+    <ClCompile Include="ui\wrappers\ImGui\functions\RenderFrameBorderColor.cpp" />
+    <ClCompile Include="ui\wrappers\ImGui\Scrollbar.cpp" />
+    <ClCompile Include="ui\wrappers\ImGui\TabButton.cpp" />
     <ClCompile Include="ui\render\AddRect\FilledHalfRounded.cpp" />
     <ClCompile Include="ui\render\groupbox.cpp" />
     <ClCompile Include="ui\render\AddRect\FilledMultiColorRounded.cpp" />
@@ -213,9 +215,9 @@
     <ClCompile Include="ui\style\tab_switch.cpp" />
     <ClCompile Include="ui\style\theme_setup.cpp" />
     <ClCompile Include="ui\ui.cpp" />
-    <ClCompile Include="ui\overrides\ImGui\Button.cpp" />
-    <ClCompile Include="ui\overrides\ImGui\functions\LogToFile.cpp" />
-    <ClCompile Include="ui\overrides\ImGui\functions\SaveIniSettingsToDisk.cpp" />
+    <ClCompile Include="ui\wrappers\ImGui\Button.cpp" />
+    <ClCompile Include="ui\wrappers\ImGui\functions\LogToFile.cpp" />
+    <ClCompile Include="ui\wrappers\ImGui\functions\SaveIniSettingsToDisk.cpp" />
     <ClCompile Include="ui\Win32\d3d_create.cpp" />
     <ClCompile Include="ui\Win32\window_effects.cpp" />
     <ClCompile Include="ui\Win32\window_functions.cpp" />
@@ -230,7 +232,7 @@
     <ClInclude Include="external\imgui\imstb_textedit.h" />
     <ClInclude Include="external\imgui\imstb_truetype.h" />
     <ClInclude Include="external\imgui\win32\imgui_impl_win32.h" />
-    <ClInclude Include="ui\overrides\wrappers.h" />
+    <ClInclude Include="ui\wrappers\wrappers.h" />
     <ClInclude Include="ui\render\render.h" />
     <ClInclude Include="ui\debug\debug.h" />
     <ClInclude Include="ui\resources\resources.h" />
