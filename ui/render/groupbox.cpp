@@ -1,8 +1,7 @@
 #include "../ui.h"
 
-
-namespace celosia::render {
-	void groupbox_body(ImDrawList* drawlist, const ImVec2 offset, const ImVec2 offset_max, const std::string title, const std::string description) {
+namespace celosia::render::groupbox {
+	void body(ImDrawList* drawlist, const ImVec2 offset, const ImVec2 offset_max, const std::string title, const std::string description, e_group_layout layout) {
 		// use theme_variables
 		ImColor a(255, 41, 73, 255);
 		ImColor b(208, 179, 255, 255);
@@ -21,7 +20,7 @@ namespace celosia::render {
 		}
 	}
 
-	void groupbox_begin(const std::string title, const std::string description) {
+	void begin(const std::string title, const std::string description, e_group_layout layout) {
 		ImDrawList* drawlist_window = ImGui::GetWindowDrawList();
 		float active_spacing = animations::str_map["groupbox_active_spacing"]; // for tab switching animations
 
@@ -40,14 +39,15 @@ namespace celosia::render {
 			offset_max.y - style::titlebar::height - style::frame::size_padding.y
 		};
 
-		groupbox_body(drawlist_window, offset, offset_max, title, description);
+		body(drawlist_window, offset, offset_max, title, description, layout);
 
 		ImGui::SetCursorPos(ImVec2(offset.x + style::groupbox::padding, offset.y + style::groupbox::height + style::groupbox::padding));
 		ImGui::BeginChild(title.c_str(), ImVec2(offset_available.x - style::groupbox::padding, offset_available.y - style::groupbox::height - style::groupbox::padding));
 	}
 
-	void groupbox_end() { // this is required and cannot be done in the same code as begin because the components will not be defined until after, which would not work
+	void end() { // this is required and cannot be done in the same code as begin because the components will not be defined until after, which would not work
 		ImGui::EndChild();
 	}
 }
-// ctodo: auto layout / layouts
+
+// ctodo: auto layout (store amount of calls, perform later)

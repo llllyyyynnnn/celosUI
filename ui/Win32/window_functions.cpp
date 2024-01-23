@@ -82,7 +82,7 @@ namespace celosia_Win32::window {
         SetWindowPos(hwnd, 0, 0, 0, size.x, size.y, 0);
     }
 
-    void destroy() { // ctodo: fix
+    void destroy() { // ctodo: fix (this wont be necessary, there's only 1 window support)
         // loop throuhg all windows, remove wc, delete d3d device
 
         for (auto const& [key, val] : variables::windows)

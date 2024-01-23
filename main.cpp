@@ -6,7 +6,9 @@ int main(HINSTANCE hInst, HINSTANCE hInstPrev, PSTR cmdline, int cmdshow) {
     HWND ui = celosia_Win32::window::create(celosia_Win32::variables::main_window_title, ImVec2(0, 0), celosia::ui::size, WS_EX_TOPMOST | WS_EX_LAYERED);
 
     celosia_Win32::D3D::CreateDevice(ui);
-    celosia::ui::initialize(ui);
+    celosia::initialize::context(ui);
+	celosia::initialize::fonts();
+
     celosia_Win32::window::enable_transparency(ui);
     celosia_Win32::window::enable_blur(ui, 4);
     celosia_Win32::window::show(ui);

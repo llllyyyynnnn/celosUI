@@ -9,7 +9,15 @@ namespace celosia::render {
 	void titlebar();
 	void sidebar();
 
-	void groupbox_body(ImDrawList* drawlist, const ImVec2 offset, const ImVec2 offset_max, const std::string title = "", const std::string description = "");
-	void groupbox_begin(const std::string title, const std::string description = "");
-	void groupbox_end();
+	namespace text {
+		void font(const char* text, ImFont* font);
+		void shadow(const char* text, ImFont* font);
+	}
+
+	namespace groupbox {
+		enum e_group_layout { fullscreen, two, four };
+		void body(ImDrawList* drawlist, const ImVec2 offset, const ImVec2 offset_max, const std::string title = "", const std::string description = "", e_group_layout layout = e_group_layout::two);
+		void begin(const std::string title, const std::string description = "", e_group_layout layout = e_group_layout::two);
+		void end();
+	}
 }

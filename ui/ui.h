@@ -26,6 +26,18 @@
 #pragma comment(lib, "d3d11.lib")
 
 namespace celosia {
+	namespace initialize {
+		void context(HWND hwnd = nullptr);
+		void fonts();
+	}
+
+	namespace resources {
+		namespace fonts {
+			bool add(std::string resourcename, std::string fontname, int fontsize);
+			inline std::unordered_map<std::string, ImFont*> map;
+		}
+	}
+
 	namespace D3D {
 		inline ID3D11Device* device;
 		inline ID3D11DeviceContext* device_context;
@@ -94,7 +106,6 @@ namespace celosia {
 		inline ImVec2 size = { 800, 600 };
 		inline bool active = true;
 
-		void initialize(HWND hwnd = nullptr);
 		void begin();
 		void end();
 		void render();
