@@ -45,11 +45,7 @@ namespace celosia::style {
 		ImGui::PushStyleColor(ImGuiCol_FrameBg, functions::rgb_vec4(themes::active.idle));
 		ImGui::PushStyleColor(ImGuiCol_FrameBgHovered, functions::rgb_vec4(themes::active.hovered));
 		ImGui::PushStyleColor(ImGuiCol_FrameBgActive, functions::rgb_vec4(themes::active.held));
-/*
-		ImGui::PushStyleColor(ImGuiCol_Button, functions::rgb_vec4(themes::active.idle));
-		ImGui::PushStyleColor(ImGuiCol_ButtonActive, functions::rgb_vec4(themes::active.idle));
-		ImGui::PushStyleColor(ImGuiCol_ButtonHovered, functions::rgb_vec4(themes::active.idle));
-*/
+
 		ImGui::PushStyleColor(ImGuiCol_CheckMark, functions::rgb_vec4(themes::active.idle));
 		ImGui::PushStyleColor(ImGuiCol_ScrollbarBg, functions::rgb_vec4(themes::active.background_darker));
 		ImGui::PushStyleColor(ImGuiCol_ScrollbarGrab, functions::rgb_vec4(themes::active.idle));

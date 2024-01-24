@@ -11,7 +11,14 @@ namespace celosia::render {
 			variables::temporary::strings["tab_active"] = "tab1";
 		if (ImGui::Button("Tab Two"))
 			variables::temporary::strings["tab_active"] = "tab2";
+		if (ImGui::Button("switch layout")) {
 
+			if (style::themes::active.tab_style == style::themes::e_tab_title_style::full)
+				style::themes::active.tab_style = style::themes::e_tab_title_style::minimal;
+			else
+				style::themes::active.tab_style = style::themes::e_tab_title_style::full;
+
+		}
 
 		ImGui::EndChild();
 	}
