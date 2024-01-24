@@ -2,7 +2,7 @@
 
 namespace celosia::style {
 	namespace general {
-		inline ImColor main_color = { 255, 56, 122,255 };
+		inline ImColor main_color = { 99, 208, 255,255 };
 		inline static int rounding = 4;
 		inline static int rounding_window = 0;
 		inline static int scroll_speed = 15.f;
@@ -11,11 +11,11 @@ namespace celosia::style {
 		inline static ImVec2 spacing = {0, 4};
 	}
 	namespace titlebar {
-		inline static float height = 60;
+		inline static float height = 45;
 		inline static int padding = 2;
 	}
 	namespace sidebar {
-		inline static float width = titlebar::height * 3;
+		inline static float width = 165;
 	}
 	namespace frame {
 		inline static ImVec2 size_padding = {20,10};
@@ -26,7 +26,7 @@ namespace celosia::style {
 		inline static int tab_switch_animation_speed = 2;
 	}
 	namespace groupbox {
-		inline static float height = titlebar::height / 2;
+		inline static float height = 30;
 		inline static int padding = titlebar::padding * 4;
 	}
 

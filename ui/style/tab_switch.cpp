@@ -32,6 +32,9 @@ namespace celosia::animations::functions {
 				ImVec2(style::sidebar::width + ui::size.x - style::frame::size_padding.x, style::titlebar::height + ui::size.y - style::frame::size_padding.y),
 				overlay_color
 			);
+
+			if (!variables::temporary::bools["tab_switch_animation_down"])
+				variables::temporary::strings["tab_current"] = variables::temporary::strings["tab_active"]; // allow the new groupbox to become visible
 		}
 	}
 }

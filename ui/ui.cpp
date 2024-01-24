@@ -2,7 +2,7 @@
 #include "Win32/ui_Win32.h"
 
 
-namespace celosia::ui { // ctodo: github
+namespace celosia::ui { // ctodo: move this to render
     void main_window() {
         ImGui::Begin(variables::title, nullptr, ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoScrollbar);
         ImGui::SetWindowSize(celosia::ui::size);
@@ -10,6 +10,7 @@ namespace celosia::ui { // ctodo: github
         render::titlebar();
         render::sidebar();
 
+        //variables::temporary::strings["tab_current"] -> visible tab
         render::groupbox::begin("test");
         render::groupbox::end();
         ImGui::End();
@@ -28,8 +29,6 @@ namespace celosia::ui { // ctodo: github
         /* use drawlists here */
 
         animations::functions::tab_switch();
-        ImGui::TabButton();
-
         end();
     }
 }

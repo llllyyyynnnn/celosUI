@@ -1,6 +1,6 @@
 #include "ui.h"
 
-namespace celosia::resources {
+namespace celosia::resources { //ctodo: move to resources/
     bool fonts::add(std::string resourcename, std::string fontname, int fontsize) {
         std::string fontpath = "O:\\SRC\\fonts\\" + fontname;
         fonts::map[resourcename] = render::io->Fonts->AddFontFromFileTTF(fontpath.c_str(), fontsize);
