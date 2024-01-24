@@ -108,6 +108,9 @@
     <ClCompile Include="ui\render\text.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ui\style\get_accent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="external\imgui\dx11\imgui_impl_dx11.h">

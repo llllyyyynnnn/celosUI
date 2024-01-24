@@ -23,11 +23,12 @@ namespace celosia::initialize {
         style::themes::set(style::themes::dark);
     }
 
-    void fonts() { // ctodo: add bytes into a .h file so there's no need for external files, also work on auto loading with maps
+    void fonts() { // ctodo: add bytes into a .h file so there's no need for external files
         resources::fonts::add("default", "Poppins-Regular.ttf", 16);
         resources::fonts::add("title", "Poppins-Bold.ttf", 24);
-    } // ctodo: freetype
+    } 
 
+    // ctodo: freetype
     // ctodo: image loading (dx11)
 }
 

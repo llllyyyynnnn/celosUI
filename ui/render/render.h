@@ -10,7 +10,10 @@ namespace celosia::render {
 	void sidebar();
 
 	namespace text {
-		void font(const char* text, ImFont* font);
+		namespace calc {
+			ImVec2 font(const char* text, ImFont* font);
+		}
+		void font(ImDrawList* drawlist, const char* text, ImVec2 pos, ImColor clr, ImFont* font);
 		void shadow(const char* text, ImFont* font);
 	}
 

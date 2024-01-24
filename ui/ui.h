@@ -47,7 +47,7 @@ namespace celosia {
 
 	namespace variables {
 		inline static const char* title = "Celosia";
-		inline static const char* version = "3.0";
+		inline static const char* version = "DEBUG";
 		
 		namespace config {
 			inline std::unordered_map<std::string, int> ints;

@@ -2,7 +2,7 @@
 
 namespace celosia::style {
 	namespace general {
-		inline ImColor main_color = { 255,0,255,255 };
+		inline ImColor main_color = { 255, 56, 122,255 };
 		inline static int rounding = 4;
 		inline static int rounding_window = 0;
 		inline static int scroll_speed = 15.f;
@@ -58,6 +58,7 @@ namespace celosia::style {
 
 		void initialize();
 		void set(t_theme theme);
+		ImColor get_accent(ImColor clr);
 	}
 
 	void push();

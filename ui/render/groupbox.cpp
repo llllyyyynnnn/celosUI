@@ -3,8 +3,8 @@
 namespace celosia::render::groupbox {
 	void body(ImDrawList* drawlist, const ImVec2 offset, const ImVec2 offset_max, const std::string title, const std::string description, e_group_layout layout) {
 		// use theme_variables
-		ImColor a(255, 41, 73, 255);
-		ImColor b(208, 179, 255, 255);
+		ImColor a = style::general::main_color;
+		ImColor b = style::themes::get_accent(a);
 
 		drawlist->AddRectFilled(ImVec2(offset.x, offset.y + (style::groupbox::height / 2)), offset_max, style::themes::active.background_darker, style::general::rounding);
 
@@ -51,3 +51,16 @@ namespace celosia::render::groupbox {
 }
 
 // ctodo: auto layout (store amount of calls, perform later)
+
+/* dark / white text
+const float combined_rgb = dUI::variables::menu::colors::theme.Value.x + dUI::variables::menu::colors::theme.Value.y + dUI::variables::menu::colors::theme.Value.z;
+	float text_color_goal;
+
+	if (combined_rgb > 2.f)
+		text_color_goal = 0.15686f;
+	else
+		text_color_goal = 1.f;
+
+	const float text_color_fl = anim::smooth("Groupbox Text Color", text_color_goal, 1.f);
+	ImColor text_color = ImColor(text_color_fl, text_color_fl, text_color_fl, alpha);
+*/

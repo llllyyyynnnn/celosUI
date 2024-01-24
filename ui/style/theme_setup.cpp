@@ -3,6 +3,7 @@
 namespace celosia::style {
 	namespace themes {
 		void init_dark() {
+			dark.text = ImColor(255, 255, 255, 255);
 			dark.background = ImColor(12, 12, 12, 180);
 			dark.background_darker = ImColor(10, 10, 10, 200);
 			dark.idle = ImColor(16, 16, 16, 255);
@@ -13,6 +14,7 @@ namespace celosia::style {
 		}
 
 		void init_light() {
+			light.text = ImColor(12, 12, 12, 255);
 			light.background = ImColor(255, 255, 255, 255);
 			light.background_darker = ImColor(200, 200, 200, 255);
 			light.idle = ImColor(0, 0, 0, 255);
