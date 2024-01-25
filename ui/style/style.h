@@ -58,7 +58,12 @@ namespace celosia::style {
 
 		void initialize();
 		void set(t_theme theme);
-		ImColor get_accent(ImColor clr);
+
+		ImVec4 rgb_vec4(const float& r, const float& g, const float& b, const float& a);
+		ImVec4 rgb_vec4(const ImColor& rgba);
+
+		ImColor rgb_accent(ImColor clr);
+		ImColor rgb_intensity(ImColor clr, float percentage);
 	}
 
 	void push();

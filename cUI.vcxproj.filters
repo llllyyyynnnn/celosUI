@@ -84,7 +84,7 @@
     <ClCompile Include="ui\wrappers\ImGui\Scrollbar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ui\wrappers\ImGui\functions\RenderFrameBorderColor.cpp">
+    <ClCompile Include="ui\wrappers\ImGui\functions\RenderFrameBorderAnimated.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ui\render\groupbox.cpp">
@@ -108,7 +108,10 @@
     <ClCompile Include="ui\render\text.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ui\style\get_accent.cpp">
+    <ClCompile Include="ui\style\accents.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\wrappers\ImGui\functions\RenderFrameAnimated.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

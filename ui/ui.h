@@ -113,9 +113,6 @@ namespace celosia {
 
 	namespace functions {
 		std::string ConvertLPCWSTRToString(LPCWSTR lpcwszStr);
-		
-		ImVec4 rgb_vec4(const float& r, const float& g, const float& b, const float& a);
-		ImVec4 rgb_vec4(const ImColor& rgba);
 
 		ImVec2 mouse_vec2();
 		bool hovered(const ImVec2& pos1, const ImVec2& pos2);

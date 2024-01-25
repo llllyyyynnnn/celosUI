@@ -16,8 +16,6 @@ namespace celosia::functions {
 		return str;
 	} // https://www.geeksforgeeks.org/convert-lpcwstr-to-std_string-in-cpp/
 
-	ImVec4 rgb_vec4(const float& r, const float& g, const float& b, const float& a) { return ImVec4(r / 255.f, g / 255.f, b / 255.f, a / 255.f); }
-	ImVec4 rgb_vec4(const ImColor& rgba) { return ImVec4(rgba.Value.x, rgba.Value.y, rgba.Value.z, rgba.Value.w); }
 	ImVec2 mouse_vec2() {
 		POINT p;
 		if (GetCursorPos(&p))

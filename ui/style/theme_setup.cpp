@@ -6,9 +6,9 @@ namespace celosia::style {
 			dark.text = ImColor(255, 255, 255, 255);
 			dark.background = ImColor(12, 12, 12, 180);
 			dark.background_darker = ImColor(10, 10, 10, 200);
-			dark.idle = ImColor(16, 16, 16, 255);
+			dark.idle = ImColor(18, 18, 18, 255);
 			dark.hovered = ImColor(64, 64, 64, 255);
-			dark.held = ImColor(32, 32, 32, 255);
+			dark.held = ImColor(16, 16, 16, 255);
 			dark.frame_border = ImColor(0, 0, 0, 0);
 			dark.frame_fill = ImColor(16, 16, 16, 255);
 			dark.tab_style = e_tab_title_style::full;
@@ -33,7 +33,7 @@ namespace celosia::style {
 		}
 	}
 
-	void push() {
+	void push() { // ctodo: fix this, broken & doesn't work (no popstylevar / popstylecolor, will crash if ran more than once)
 		ImGui::PushStyleVar(ImGuiStyleVar_FrameRounding, general::rounding);
 		ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, frame::size_padding);
 		ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, general::rounding_window);
@@ -41,19 +41,19 @@ namespace celosia::style {
 		ImGui::PushStyleVar(ImGuiStyleVar_ScrollbarSize, 4);
 		ImGui::PushStyleVar(ImGuiStyleVar_ItemSpacing, general::spacing);
 
-		ImGui::PushStyleColor(ImGuiCol_WindowBg, functions::rgb_vec4(themes::active.background));
+		ImGui::PushStyleColor(ImGuiCol_WindowBg, style::themes::rgb_vec4(themes::active.background));
 
-		ImGui::PushStyleColor(ImGuiCol_FrameBg, functions::rgb_vec4(themes::active.idle));
-		ImGui::PushStyleColor(ImGuiCol_FrameBgHovered, functions::rgb_vec4(themes::active.hovered));
-		ImGui::PushStyleColor(ImGuiCol_FrameBgActive, functions::rgb_vec4(themes::active.held));
+		ImGui::PushStyleColor(ImGuiCol_FrameBg, style::themes::rgb_vec4(themes::active.idle));
+		ImGui::PushStyleColor(ImGuiCol_FrameBgHovered, style::themes::rgb_vec4(themes::active.hovered));
+		ImGui::PushStyleColor(ImGuiCol_FrameBgActive, style::themes::rgb_vec4(themes::active.held));
 
-		ImGui::PushStyleColor(ImGuiCol_CheckMark, functions::rgb_vec4(themes::active.idle));
-		ImGui::PushStyleColor(ImGuiCol_ScrollbarBg, functions::rgb_vec4(themes::active.background_darker));
-		ImGui::PushStyleColor(ImGuiCol_ScrollbarGrab, functions::rgb_vec4(themes::active.idle));
-		ImGui::PushStyleColor(ImGuiCol_Border, functions::rgb_vec4(themes::active.frame_border));
+		ImGui::PushStyleColor(ImGuiCol_CheckMark, style::themes::rgb_vec4(themes::active.idle));
+		ImGui::PushStyleColor(ImGuiCol_ScrollbarBg, style::themes::rgb_vec4(themes::active.background_darker));
+		ImGui::PushStyleColor(ImGuiCol_ScrollbarGrab, style::themes::rgb_vec4(themes::active.idle));
+		ImGui::PushStyleColor(ImGuiCol_Border, style::themes::rgb_vec4(themes::active.frame_border));
 
-		ImGui::PushStyleColor(ImGuiCol_TitleBg, functions::rgb_vec4(themes::active.idle));
-		ImGui::PushStyleColor(ImGuiCol_TitleBgActive, functions::rgb_vec4(themes::active.idle));
-		ImGui::PushStyleColor(ImGuiCol_TitleBgCollapsed, functions::rgb_vec4(themes::active.idle));
+		ImGui::PushStyleColor(ImGuiCol_TitleBg, style::themes::rgb_vec4(themes::active.idle));
+		ImGui::PushStyleColor(ImGuiCol_TitleBgActive, style::themes::rgb_vec4(themes::active.idle));
+		ImGui::PushStyleColor(ImGuiCol_TitleBgCollapsed, style::themes::rgb_vec4(themes::active.idle));
 	}
 }

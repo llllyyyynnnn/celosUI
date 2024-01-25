@@ -201,10 +201,11 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ui\initialize.cpp" />
     <ClCompile Include="ui\render\text.cpp" />
-    <ClCompile Include="ui\style\get_accent.cpp" />
+    <ClCompile Include="ui\style\accents.cpp" />
     <ClCompile Include="ui\wrappers\ImGui\AddRectFilledHalfRounded.cpp" />
     <ClCompile Include="ui\wrappers\ImGui\AddRectFilledMultiColorRounded.cpp" />
-    <ClCompile Include="ui\wrappers\ImGui\functions\RenderFrameBorderColor.cpp" />
+    <ClCompile Include="ui\wrappers\ImGui\functions\RenderFrameAnimated.cpp" />
+    <ClCompile Include="ui\wrappers\ImGui\functions\RenderFrameBorderAnimated.cpp" />
     <ClCompile Include="ui\wrappers\ImGui\Scrollbar.cpp" />
     <ClCompile Include="ui\wrappers\ImGui\TabButton.cpp" />
     <ClCompile Include="ui\render\groupbox.cpp" />
