@@ -23,7 +23,5 @@ namespace celosia::render {
 		);
 
 		ImGui::PopFont();
-		//render::text::font(drawlist_window, variables::title, ImVec2(10, 10), ImColor(255, 255, 255, 255), resources::fonts::map["title"]);
-		//render::text::font(drawlist_window, variables::version, ImVec2(10 + render::text::calc::font(variables::title, resources::fonts::map["title"]).x, 10), style::general::main_color, resources::fonts::map["title"]);
 	}
 }

@@ -8,7 +8,7 @@ namespace celosia::animations::functions {
 
 			variables::temporary::strings["tab_old"] = variables::temporary::strings["tab_active"];
 
-			debug::log("tab switch activated");
+			debug::log("tab switch animation activated");
 		}
 
 		if (variables::temporary::bools["tab_switch_animation_active"]) {
@@ -20,7 +20,7 @@ namespace celosia::animations::functions {
 			if (animations::str_map["groupbox_active_spacing"] >= style::frame::tab_switch_animation_max)
 				variables::temporary::bools["tab_switch_animation_down"] = false;
 
-			if (variables::temporary::bools["tab_switch_animation_down"] && animations::str_map["groupbox_active_spacing"] == 0)
+			if (variables::temporary::bools["tab_switch_animation_down"] && animations::str_map["groupbox_active_spacing"] == 0) 
 				variables::temporary::bools["tab_switch_animation_active"] = false;
 
 			float overlay_alpha = animations::str_map["groupbox_active_spacing"] / style::frame::tab_switch_animation_max;
