@@ -10,16 +10,33 @@ namespace celosia::ui { // ctodo: move this to render
         render::titlebar();
         render::sidebar();
 
-        //variables::temporary::strings["tab_current"] -> visible tab
-        render::groupbox::begin("Groupbox A");
-        for(int i = 0; i < 20; i++)
-            ImGui::Button(("group A " + std::to_string(i)).c_str());
-        render::groupbox::end();
+        // -> visible tab
 
-        render::groupbox::begin("Groupbox B");
-        for (int i = 0; i < 20; i++)
-            ImGui::Button(("group B " + std::to_string(i)).c_str());
-        render::groupbox::end();
+        if (variables::temporary::strings["tab_current"] == "tab1") {
+            render::groupbox::begin("Groupbox A");
+            for (int i = 0; i < 20; i++)
+                ImGui::Button(("group A " + std::to_string(i)).c_str());
+            render::groupbox::end();
+
+            render::groupbox::begin("Groupbox B");
+            for (int i = 0; i < 20; i++)
+                ImGui::Button(("group B " + std::to_string(i)).c_str());
+            render::groupbox::end();
+        }
+        
+        if (variables::temporary::strings["tab_current"] == "tab2") {
+            render::groupbox::begin("You've entered tab2");
+            for (int i = 0; i < 20; i++)
+                ImGui::Button(("Tab 2 " + std::to_string(i)).c_str());
+            render::groupbox::end();
+
+            render::groupbox::begin("Groupbox D");
+            for (int i = 0; i < 20; i++)
+                ImGui::Button(("group D " + std::to_string(i)).c_str());
+            render::groupbox::end();
+        }
+
+
         ImGui::End();
     }
 
