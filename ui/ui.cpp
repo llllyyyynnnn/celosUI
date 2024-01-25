@@ -11,7 +11,14 @@ namespace celosia::ui { // ctodo: move this to render
         render::sidebar();
 
         //variables::temporary::strings["tab_current"] -> visible tab
-        render::groupbox::begin("test");
+        render::groupbox::begin("Groupbox A");
+        for(int i = 0; i < 20; i++)
+            ImGui::Button(("group A " + std::to_string(i)).c_str());
+        render::groupbox::end();
+
+        render::groupbox::begin("Groupbox B");
+        for (int i = 0; i < 20; i++)
+            ImGui::Button(("group B " + std::to_string(i)).c_str());
         render::groupbox::end();
         ImGui::End();
     }
@@ -23,6 +30,7 @@ namespace celosia::ui { // ctodo: move this to render
         render::drawlist_foreground = ImGui::GetForegroundDrawList();
 
         if (ui::active) {
+            variables::config::ints["groupbox_index"] = 0;
             main_window();
         }
 

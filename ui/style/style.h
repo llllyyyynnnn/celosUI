@@ -18,7 +18,7 @@ namespace celosia::style {
 		inline static float width = 165;
 	}
 	namespace frame {
-		inline static ImVec2 size_padding = {20,10};
+		inline static ImVec2 size_padding = {10,10};
 		inline static int border_size = 1;
 		inline static int border_size_animated = 2;
 
