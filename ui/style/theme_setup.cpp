@@ -37,7 +37,7 @@ namespace celosia::style {
 		ImGui::PushStyleVar(ImGuiStyleVar_FrameRounding, general::rounding);
 		ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, frame::size_padding);
 		ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, general::rounding_window);
-		ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0, 0)); // idk if this should be customizable it's annoying
+		ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0, 0));
 		ImGui::PushStyleVar(ImGuiStyleVar_ScrollbarSize, 4);
 		ImGui::PushStyleVar(ImGuiStyleVar_ItemSpacing, general::spacing);
 

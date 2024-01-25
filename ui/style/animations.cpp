@@ -1,7 +1,7 @@
 #include "../ui.h"
 
 namespace celosia::animations::functions {
-    float calc_linear(float current_value, const float goal_value, float speed) { // ctodo: clamp
+    float calc_linear(float current_value, const float goal_value, float speed) {
         ImGuiIO* io = celosia::render::io;
         speed += animations::base_speed;
 
@@ -116,10 +116,4 @@ namespace celosia::animations {
     ImVec4 set(const int& value, const ImVec4 goal_value, float speed, e_method method) {
         return set(std::to_string(value), goal_value, speed, method);
     }
-
-/*
-    ImColor set(const int& value, const ImColor goal_value, float speed, e_method method) {
-        return set(std::to_string(value), goal_value, speed, method);
-    }
-*/ // ctodo: imcolor doesn't work, gets confused as imvec4
 }

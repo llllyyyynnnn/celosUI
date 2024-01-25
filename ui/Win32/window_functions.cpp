@@ -18,10 +18,10 @@ namespace celosia_Win32::window {
             if ((wParam & 0xfff0) == SC_KEYMENU) // Disable ALT application menu
                 return 0;
             break;
-        case WM_DISPLAYCHANGE: // res changed
+        case WM_DISPLAYCHANGE: // screen resolution changed
             //ui::variables::monitor::update();
             break;
-        case WM_DEVICECHANGE: // monitor changed ?
+        case WM_DEVICECHANGE: // monitor changed
             break;
         case WM_DESTROY:
             PostQuitMessage(0);
@@ -71,20 +71,18 @@ namespace celosia_Win32::window {
     
     void hide(HWND hwnd) {
         ShowWindow(hwnd, SW_HIDE);
-        UpdateWindow(hwnd); // unsure if this is needed here
+        UpdateWindow(hwnd);
     }
 
-    void move(HWND hwnd, ImVec2 pos) { // ctodo: get old size and use it
+    void move(HWND hwnd, ImVec2 pos) {
         SetWindowPos(hwnd, 0, pos.x, pos.y, celosia::ui::size.x, celosia::ui::size.y, 0);
     }
 
-    void resize(HWND hwnd, ImVec2 size) { // ctodo: get old pos and use it
+    void resize(HWND hwnd, ImVec2 size) { // ctodo: WARNING these will become invalid, the user can resize the window
         SetWindowPos(hwnd, 0, 0, 0, size.x, size.y, 0);
     }
 
     void destroy() { // ctodo: fix (this wont be necessary, there's only 1 window support)
-        // loop throuhg all windows, remove wc, delete d3d device
-
         for (auto const& [key, val] : variables::windows)
         {
             std::string converted = celosia::functions::ConvertLPCWSTRToString(key);
