@@ -52,8 +52,8 @@ namespace celosia::render::groupbox {
 			const float combined_rgb = style::general::main_color.Value.x + style::general::main_color.Value.y + style::general::main_color.Value.z; // could be made into a function, i don't see the point though because i don't plan on using this any other place
 			float text_color_goal;
 
-			if (combined_rgb > 2.f)
-				text_color_goal = 0.15686f;
+			if (combined_rgb > 1.5f)
+				text_color_goal = 0.15f;
 			else
 				text_color_goal = 1.f;
 

@@ -7,7 +7,7 @@ void tabstyle(const ImRect bb, const char* label, ImVec2 label_size, const ImGui
     ImGui::RenderTextClipped(ImVec2(bb.Min.x + style.FramePadding.x, bb.Min.y + style.FramePadding.y), ImVec2(bb.Max.x - style.FramePadding.x, bb.Max.y - style.FramePadding.y), label, NULL, &label_size, style.ButtonTextAlign, &bb);
 }
 
-namespace ImGui { // the following code is for ButtonEx, should probably make 2 funcs
+namespace ImGui { 
     bool TabButton(const char* label, const ImVec2& size_arg)
     {
         return TabButtonEx(label, size_arg, ImGuiButtonFlags_None);

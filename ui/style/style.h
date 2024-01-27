@@ -26,7 +26,7 @@ namespace celosia::style {
 		inline static int tab_switch_animation_speed = 2;
 	}
 	namespace groupbox {
-		inline static float height = 30;
+		inline static float height = 40;
 		inline static int padding = titlebar::padding * 4;
 	}
 
