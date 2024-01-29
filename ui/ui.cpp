@@ -25,7 +25,7 @@ namespace celosia::ui { // ctodo: move this to render
         }
         else {
             render::groupbox::begin("Groupbox B");
-            ImGui::ColorEdit4("Main Color", color, ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_NoTooltip | ImGuiColorEditFlags_NoSidePreview); // ctodo: remake this
+            ImGui::ColorEdit4("Main Color", color, ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_NoTooltip | ImGuiColorEditFlags_NoSidePreview | /*ImGuiColorEditFlags_AlphaBar*/); // ctodo: remake this
             style::general::main_color = { color[0], color[1], color[2], color[3] };
             render::groupbox::end();
         }
