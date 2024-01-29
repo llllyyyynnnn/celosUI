@@ -25,7 +25,7 @@ namespace ImGui {
         const ImGuiID id = window->GetID(label);
         const ImVec2 label_size = CalcTextSize(label, NULL, true);
 
-        const float square_sz = GetFrameHeight() / 2;
+        const float square_sz = GetFrameHeight() / 2; // ctodo: fix proper spacing // ctodo_urgent
         const ImVec2 pos = window->DC.CursorPos;
         const ImRect total_bb(pos, pos + ImVec2(square_sz + (label_size.x > 0.0f ? style.ItemInnerSpacing.x + label_size.x : 0.0f), label_size.y + style.FramePadding.y));
         ItemSize(total_bb, style.FramePadding.y);
@@ -70,4 +70,8 @@ namespace ImGui {
         IMGUI_TEST_ENGINE_ITEM_INFO(id, label, g.LastItemData.StatusFlags | ImGuiItemStatusFlags_Checkable | (*v ? ImGuiItemStatusFlags_Checked : 0));
         return pressed;
     }
+}
+
+namespace ImGui {
+    bool CheckboxMap(const char* label) { return Checkbox(label, &celosia::variables::config::bools[label]); }
 }

@@ -114,9 +114,6 @@
     <ClCompile Include="ui\wrappers\ImGui\functions\RenderFrameAnimated.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ui\wrappers\ImGui\CheckboxMap.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ui\wrappers\ImGui\Checkbox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

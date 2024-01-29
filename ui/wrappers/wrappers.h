@@ -16,3 +16,5 @@ namespace ImGui { // add extra ImGui components here, in order to keep it all in
 	IMGUI_API bool Checkbox(const char* label, bool* v);
 	bool CheckboxMap(const char* label);
 }
+
+// CTODO: restructure these

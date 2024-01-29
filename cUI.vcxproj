@@ -205,7 +205,6 @@
     <ClCompile Include="ui\wrappers\ImGui\AddRectFilledHalfRounded.cpp" />
     <ClCompile Include="ui\wrappers\ImGui\AddRectFilledMultiColorRounded.cpp" />
     <ClCompile Include="ui\wrappers\ImGui\Checkbox.cpp" />
-    <ClCompile Include="ui\wrappers\ImGui\CheckboxMap.cpp" />
     <ClCompile Include="ui\wrappers\ImGui\ColorPicker.cpp" />
     <ClCompile Include="ui\wrappers\ImGui\functions\RenderFrameAnimated.cpp" />
     <ClCompile Include="ui\wrappers\ImGui\functions\RenderFrameBorderAnimated.cpp" />

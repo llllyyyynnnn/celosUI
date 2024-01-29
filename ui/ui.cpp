@@ -14,17 +14,18 @@ namespace celosia::ui { // ctodo: move this to render
         if (variables::temporary::strings["tab_current"] == "tab1") { // --> visible tab
             render::groupbox::begin("Groupbox A");
             for (int i = 0; i < 20; i++)
-                ImGui::Button(("group A " + std::to_string(i)).c_str());
+                if (ImGui::Button(("group A " + std::to_string(i)).c_str()))
+                    debug::log("Button " + std::to_string(i) + " has been hit");
             render::groupbox::end();
 
             render::groupbox::begin("Groupbox B", "Checkboxes");
             for (int i = 0; i < 20; i++)
-                ImGui::Checkbox(("Checkbox " + std::to_string(i)).c_str(), &variables::config::bools["test bool" + std::to_string(i)]);
+                ImGui::CheckboxMap(("Checkbox " + std::to_string(i)).c_str());
             render::groupbox::end();
         }
         else {
             render::groupbox::begin("Groupbox B");
-            ImGui::ColorEdit4("Main Color", color, ImGuiColorEditFlags_NoLabel | ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_NoTooltip); // ctodo: remake this
+            ImGui::ColorEdit4("Main Color", color, ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_NoTooltip | ImGuiColorEditFlags_NoSidePreview); // ctodo: remake this
             style::general::main_color = { color[0], color[1], color[2], color[3] };
             render::groupbox::end();
         }
