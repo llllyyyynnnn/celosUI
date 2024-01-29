@@ -1,5 +1,6 @@
 #pragma once
 #define IMGUI_DEFINE_MATH_OPERATORS
+#define _CRT_SECURE_NO_WARNINGS // CTODO: check this out
 
 #include <Windows.h>
 #include <d3d11.h>

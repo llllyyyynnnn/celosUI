@@ -17,15 +17,15 @@ namespace celosia::ui { // ctodo: move this to render
                 ImGui::Button(("group A " + std::to_string(i)).c_str());
             render::groupbox::end();
 
-            render::groupbox::begin("Groupbox B");
-            ImGui::ColorEdit3("Main Color", color, ImGuiColorEditFlags_NoLabel | ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_NoTooltip); // ctodo: remake this
-            style::general::main_color = { color[0], color[1], color[2], color[3] };
+            render::groupbox::begin("Groupbox B", "Checkboxes");
+            for (int i = 0; i < 20; i++)
+                ImGui::Checkbox(("Checkbox " + std::to_string(i)).c_str(), &variables::config::bools["test bool" + std::to_string(i)]);
             render::groupbox::end();
         }
         else {
-            render::groupbox::begin("Groupbox A", "test description AAA");
-            for (int i = 0; i < 20; i++)
-                ImGui::Button(("group A " + std::to_string(i)).c_str());
+            render::groupbox::begin("Groupbox B");
+            ImGui::ColorEdit4("Main Color", color, ImGuiColorEditFlags_NoLabel | ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_NoTooltip); // ctodo: remake this
+            style::general::main_color = { color[0], color[1], color[2], color[3] };
             render::groupbox::end();
         }
         

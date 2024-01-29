@@ -29,6 +29,11 @@ namespace celosia::style {
 		inline static float height = 40;
 		inline static int padding = titlebar::padding * 4;
 	}
+/*
+	namespace checkbox {
+		inline static int size = 10;
+	}
+*/
 
 	namespace themes {
 		enum e_tab_title_style { full, minimal };
