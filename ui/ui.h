@@ -128,7 +128,6 @@ namespace celosia {
 }
 
 // ctodo = todo's
-// ctodo: encryption
 
 /*
 Relevant functions:

@@ -12,6 +12,7 @@ res does not have to be 1920x1080
 
 redo font spacing code
 redo gradient code
+redo imgui::endchild pushclip
 
 
 b4->
