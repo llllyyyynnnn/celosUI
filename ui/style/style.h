@@ -2,7 +2,7 @@
 
 namespace celosia::style {
 	namespace general {
-		inline ImColor main_color = { 99, 208, 255,255 };
+		inline ImColor main_color = { 21,196,128,255 };
 		inline static int rounding = 4;
 		inline static int rounding_window = 0;
 		inline static int scroll_speed = 15.f;

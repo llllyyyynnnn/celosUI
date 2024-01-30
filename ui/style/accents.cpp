@@ -2,7 +2,7 @@
 
 namespace celosia::style::themes {
 	ImVec4 rgb_vec4(const float& r, const float& g, const float& b, const float& a) { return ImVec4(r / 255.f, g / 255.f, b / 255.f, a / 255.f); }
-	ImVec4 rgb_vec4(const ImColor& rgba) { return ImVec4(rgba.Value.x, rgba.Value.y, rgba.Value.z, rgba.Value.w); }
+	ImVec4 rgb_vec4(const ImColor& rgba) { return ImVec4(rgba); }
 
 	ImColor rgb_accent(ImColor clr) {  // CTODO: improper, works for now
 		return ImColor{ clr.Value.x, clr.Value.y * 0.69f, clr.Value.z * 1.5f, clr.Value.w };

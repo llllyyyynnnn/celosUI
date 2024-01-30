@@ -100,7 +100,6 @@ namespace celosia {
 		float set(const int& value, const float goal_value, float speed = 0, e_method method = e_method::smooth);
 		ImVec2 set(const int& value, const ImVec2 goal_value, float speed = 0, e_method method = e_method::smooth);
 		ImVec4 set(const int& value, const ImVec4 goal_value, float speed = 0, e_method method = e_method::smooth);
-
 	}
 
 	namespace ui {

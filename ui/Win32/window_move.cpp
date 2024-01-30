@@ -20,7 +20,7 @@ void celosia_Win32::window::drag() { // ctodo: make sure these aren't being hand
     }
 
     if (ignore_click)
-        ignore_click = GetAsyncKeyState(VK_LBUTTON); // ctodo: use actual hotkey sys
+        ignore_click = GetAsyncKeyState(VK_LBUTTON); // ctodo: use actual input sys
     
     if ((mouse_pos.x >= window_pos.left && mouse_pos.x <= window_pos.right) &&
         (mouse_pos.y >= window_pos.top && mouse_pos.y <= window_pos.top + celosia::style::titlebar::height)) {

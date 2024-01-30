@@ -1,7 +1,7 @@
 #include "ui.h"
 #include "Win32/ui_Win32.h"
 
-float color[4] = { 21 / 255.f, 196 / 255.f, 128 / 255.f, 1 };
+float color[4] = { celosia::style::general::main_color.Value.x, celosia::style::general::main_color.Value.y, celosia::style::general::main_color.Value.z, celosia::style::general::main_color.Value.w};
 
 namespace celosia::ui { // ctodo: move this to render
     void main_window() {
@@ -25,8 +25,8 @@ namespace celosia::ui { // ctodo: move this to render
         }
         else {
             render::groupbox::begin("Groupbox B");
-            ImGui::ColorEdit4("Main Color", color, ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_NoTooltip | ImGuiColorEditFlags_NoSidePreview /*| ImGuiColorEditFlags_AlphaBar*/); // ctodo: remake this
-            style::general::main_color = { color[0], color[1], color[2], color[3] };
+            //ImGui::ColorEdit4("Main Color", color, ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_NoTooltip | ImGuiColorEditFlags_NoSidePreview /*| ImGuiColorEditFlags_AlphaBar*/); // ctodo: remake this
+            //style::general::main_color = { color[0], color[1], color[2], color[3] };
 
 
             const char* test[] = {"a", "b", "c"};

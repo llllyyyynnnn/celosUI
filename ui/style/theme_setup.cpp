@@ -41,23 +41,27 @@ namespace celosia::style {
 		ImGui::PushStyleVar(ImGuiStyleVar_ScrollbarSize, 4);
 		ImGui::PushStyleVar(ImGuiStyleVar_ItemSpacing, general::spacing);
 
-		ImGui::PushStyleColor(ImGuiCol_WindowBg, style::themes::rgb_vec4(themes::active.background));
+		ImGui::PushStyleColor(ImGuiCol_WindowBg, ImVec4(themes::active.background));
 
-		ImGui::PushStyleColor(ImGuiCol_FrameBg, style::themes::rgb_vec4(themes::active.idle));
-		ImGui::PushStyleColor(ImGuiCol_FrameBgHovered, style::themes::rgb_vec4(themes::active.hovered));
-		ImGui::PushStyleColor(ImGuiCol_FrameBgActive, style::themes::rgb_vec4(themes::active.held));
+		ImGui::PushStyleColor(ImGuiCol_FrameBg, ImVec4(themes::active.idle));
+		ImGui::PushStyleColor(ImGuiCol_FrameBgHovered, ImVec4(themes::active.hovered));
+		ImGui::PushStyleColor(ImGuiCol_FrameBgActive, ImVec4(themes::active.held));
 
-		ImGui::PushStyleColor(ImGuiCol_Button, style::themes::rgb_vec4(themes::active.idle));
-		ImGui::PushStyleColor(ImGuiCol_ButtonHovered, style::themes::rgb_vec4(themes::active.hovered));
-		ImGui::PushStyleColor(ImGuiCol_ButtonActive, style::themes::rgb_vec4(themes::active.held));
+		ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(themes::active.idle));
+		ImGui::PushStyleColor(ImGuiCol_ButtonHovered, ImVec4(themes::active.hovered));
+		ImGui::PushStyleColor(ImGuiCol_ButtonActive, ImVec4(themes::active.held));
 
-		ImGui::PushStyleColor(ImGuiCol_CheckMark, style::themes::rgb_vec4(themes::active.idle));
-		ImGui::PushStyleColor(ImGuiCol_ScrollbarBg, style::themes::rgb_vec4(themes::active.background_darker));
-		ImGui::PushStyleColor(ImGuiCol_ScrollbarGrab, style::themes::rgb_vec4(themes::active.idle));
-		ImGui::PushStyleColor(ImGuiCol_Border, style::themes::rgb_vec4(themes::active.frame_border));
+		ImGui::PushStyleColor(ImGuiCol_HeaderHovered, ImVec4(themes::active.hovered));
+		ImGui::PushStyleColor(ImGuiCol_Header, ImVec4(general::main_color));
+		ImGui::PushStyleColor(ImGuiCol_HeaderActive, ImVec4(style::themes::rgb_intensity(general::main_color, 0.5f)));
 
-		ImGui::PushStyleColor(ImGuiCol_TitleBg, style::themes::rgb_vec4(themes::active.idle));
-		ImGui::PushStyleColor(ImGuiCol_TitleBgActive, style::themes::rgb_vec4(themes::active.idle));
-		ImGui::PushStyleColor(ImGuiCol_TitleBgCollapsed, style::themes::rgb_vec4(themes::active.idle));
+		ImGui::PushStyleColor(ImGuiCol_CheckMark, ImVec4(themes::active.idle));
+		ImGui::PushStyleColor(ImGuiCol_ScrollbarBg, ImVec4(themes::active.background_darker));
+		ImGui::PushStyleColor(ImGuiCol_ScrollbarGrab, ImVec4(themes::active.idle));
+		ImGui::PushStyleColor(ImGuiCol_Border, ImVec4(themes::active.frame_border));
+
+		ImGui::PushStyleColor(ImGuiCol_TitleBg, ImVec4(themes::active.idle));
+		ImGui::PushStyleColor(ImGuiCol_TitleBgActive, ImVec4(themes::active.idle));
+		ImGui::PushStyleColor(ImGuiCol_TitleBgCollapsed, ImVec4(themes::active.idle));
 	}
 }
