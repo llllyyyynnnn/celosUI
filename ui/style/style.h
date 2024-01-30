@@ -19,7 +19,7 @@ namespace celosia::style {
 	}
 	namespace frame {
 		inline static ImVec2 size_padding = {10,10};
-		inline static int border_size = 1;
+		inline static int border_size = 2;
 		inline static int border_size_animated = 2;
 
 		inline static float tab_switch_animation_max = 16;

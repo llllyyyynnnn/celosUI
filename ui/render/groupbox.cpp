@@ -65,15 +65,15 @@ namespace celosia::render::groupbox {
 		}
 		
 		ImFont* font_default = resources::fonts::map["default"];
+		ImFont* font_default_smaller = resources::fonts::map["default_smaller"];
 
 
 		if (description != "") { // ctodo: smaller font for desc
 			render::text::font(drawlist, title.c_str(), ImVec2(offset.x + style::frame::size_padding.x, (offset.y + style::groupbox::height / 2) - ((render::text::calc::font("a", font_default).y) / 2) - ((render::text::calc::font("a", font_default).y) / 2)), text_color, font_default);
-			render::text::font(drawlist, description.c_str(), ImVec2(offset.x + style::frame::size_padding.x, (offset.y + style::groupbox::height / 2) - ((render::text::calc::font("a", font_default).y) / 2) + ((render::text::calc::font("a", font_default).y) / 2)), text_color, font_default);
+			render::text::font(drawlist, description.c_str(), ImVec2(offset.x + style::frame::size_padding.x, (offset.y + style::groupbox::height / 2) - ((render::text::calc::font("a", font_default_smaller).y) / 2) + ((render::text::calc::font("a", font_default_smaller).y) / 2)), text_color, font_default_smaller);
 		}
 		else
 			render::text::font(drawlist, title.c_str(), ImVec2(offset.x + style::frame::size_padding.x, (offset.y + style::groupbox::height / 2) - (render::text::calc::font("a", font_default).y / 2)), text_color, font_default);
-		
 	}
 
 	void begin(const std::string title, const std::string description, e_group_layout layout) {

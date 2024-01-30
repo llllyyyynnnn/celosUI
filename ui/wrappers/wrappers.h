@@ -7,7 +7,7 @@ namespace ImGui { // add extra ImGui components here, in order to keep it all in
 	void AddRectFilledHalfRounded(ImDrawList* drawlist, const ImVec2& min, const ImVec2& max, const ImColor& clr, const int& rounding);
 
 	IMGUI_API void RenderFrameBorderColor(ImVec2 p_min, ImVec2 p_max, ImColor clr,float rounding = 0.0f);
-	IMGUI_API void RenderFrameBorderAnimated(const char* label, ImVec2 p_min, ImVec2 p_max, ImColor fill_col, bool border = true, float rounding = 0.0f);
+	IMGUI_API void RenderFrameBorderAnimated(const char* label, ImVec2 p_min, ImVec2 p_max, ImColor fill_col, float rounding = 0.0f);
 	IMGUI_API void RenderFrameAnimated(const char* label, ImVec2 p_min, ImVec2 p_max, ImColor fill_col, bool border = true, float rounding = 0.0f);
 	
 	IMGUI_API bool ColorEdit4(const char* label, float col[4], ImGuiColorEditFlags flags = 0);

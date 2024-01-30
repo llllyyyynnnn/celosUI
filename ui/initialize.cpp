@@ -25,6 +25,8 @@ namespace celosia::initialize {
 
     void fonts() { // ctodo: add bytes into a .h file so there's no need for external files
         resources::fonts::add("default", "Poppins-Regular.ttf", 16);
+        resources::fonts::add("default_smaller", "Poppins-Regular.ttf", 14);
+
         resources::fonts::add("title", "Poppins-Bold.ttf", 24);
     } 
 

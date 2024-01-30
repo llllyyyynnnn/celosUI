@@ -2,7 +2,7 @@
 
 void style1(const ImRect bb, const char* label, ImVec2 label_size, const ImGuiStyle& style, ImColor col) {
     ImGui::RenderFrameAnimated(label, bb.Min, bb.Max, celosia::style::themes::rgb_intensity(col, 0.75), true, style.FrameRounding);
-    ImGui::RenderFrameBorderAnimated(label, bb.Min, bb.Max, col, true, style.FrameRounding);
+    ImGui::RenderFrameBorderAnimated(label, bb.Min, bb.Max, col, style.FrameRounding);
     ImGui::RenderTextClipped(ImVec2(bb.Min.x + style.FramePadding.x, bb.Min.y + style.FramePadding.y), ImVec2(bb.Max.x - style.FramePadding.x, bb.Max.y - style.FramePadding.y), label, NULL, &label_size, style.ButtonTextAlign, &bb);
 }
 

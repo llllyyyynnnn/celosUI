@@ -123,6 +123,9 @@
     <ClCompile Include="ui\wrappers\ImGui\ColorPicker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ui\wrappers\ImGui\Combo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="external\imgui\dx11\imgui_impl_dx11.h">

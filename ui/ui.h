@@ -1,6 +1,6 @@
 #pragma once
 #define IMGUI_DEFINE_MATH_OPERATORS
-#define _CRT_SECURE_NO_WARNINGS // CTODO: check this out
+#define _CRT_SECURE_NO_WARNINGS // CTODO: check this out & changes here take a while to compile as a result of it being included everywhere
 
 #include <Windows.h>
 #include <d3d11.h>
@@ -47,7 +47,7 @@ namespace celosia {
 	}
 
 	namespace variables {
-		inline static const char* title = "Celosia";
+		inline static const char* title = "ui";
 		inline static const char* version = "DEBUG";
 		
 		namespace config {
