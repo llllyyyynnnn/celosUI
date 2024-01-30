@@ -200,6 +200,7 @@ Index of this file:
 
 // System includes
 #include <stdint.h>     // intptr_t
+#include "../../ui/wrappers/wrappers.h"
 
 // Visual Studio warnings
 #ifdef _MSC_VER

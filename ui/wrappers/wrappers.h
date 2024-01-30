@@ -9,7 +9,11 @@ namespace ImGui { // add extra ImGui components here, in order to keep it all in
 	IMGUI_API void RenderFrameBorderColor(ImVec2 p_min, ImVec2 p_max, ImColor clr,float rounding = 0.0f);
 	IMGUI_API void RenderFrameBorderAnimated(const char* label, ImVec2 p_min, ImVec2 p_max, ImColor fill_col, float rounding = 0.0f);
 	IMGUI_API void RenderFrameAnimated(const char* label, ImVec2 p_min, ImVec2 p_max, ImColor fill_col, bool border = true, float rounding = 0.0f);
-	
+	IMGUI_API void RenderArrow(ImDrawList* draw_list, ImVec2 pos, ImU32 col, ImGuiDir dir, float scale = 1.0f);
+	IMGUI_API void RenderBullet(ImDrawList* draw_list, ImVec2 pos, ImU32 col);
+	IMGUI_API void RenderCheckMark(ImDrawList* draw_list, ImVec2 pos, ImU32 col, float sz);
+	IMGUI_API void RenderArrowPointingAt(ImDrawList* draw_list, ImVec2 pos, ImVec2 half_sz, ImGuiDir direction, ImU32 col);
+
 	IMGUI_API bool ColorEdit4(const char* label, float col[4], ImGuiColorEditFlags flags = 0);
 	IMGUI_API bool ColorPicker4(const char* label, float col[4], ImGuiColorEditFlags flags = 0, const float* ref_col = NULL);
 
