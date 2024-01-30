@@ -128,14 +128,3 @@ namespace celosia {
 }
 
 // ctodo = todo's
-
-/*
-Relevant functions:
-
-RenderWindowDecorations (scroll, decor)
-LogToFile
-SaveIniSettingsToDisk
-ButtonEx
-Scrollbar
-UpdateMouseWheel
-*/
