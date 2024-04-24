@@ -1,7 +1,7 @@
 To find todo's, search all files for "CTODO". This was in order to prevent ImGui's todos from interfering with my own.
 
-To implement
->
+> To implement
+
 InputSystem
 
 Freetype
@@ -17,8 +17,8 @@ Color Picker
 Scrollbar.h
 
 
-Optional
->
+> Optional
+
 redo font spacing code
 
 redo gradient code
