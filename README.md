@@ -1,7 +1,8 @@
 # CelosUI
-Heavily modified version of ImGui with added functions for animations, variables and configurations. 
+A heavily modified version of ImGui with added functionality.
 
 > Current features
+* All of the ImGui features
 * Animations
 * New and improved widgets and components
 * Map variables
