@@ -28,4 +28,7 @@ A heavily modified version of ImGui with added functionality.
 * RenderFrameFunctions
 * for animations using renderframeanimations, add an index that is reset on every frame to avoid mixing up
 
+> Issues
+* Fonts are required to be in the same folder as the executable. They will not work if executed from Visual Studio.
+
 To find todo's, search all files for "CTODO". This was in order to prevent ImGui's todos from interfering with my own.

@@ -32,7 +32,7 @@ int main(HINSTANCE hInst, HINSTANCE hInstPrev, PSTR cmdline, int cmdshow) {
         if(celosia::ui::active)
             celosia_Win32::window::drag();
 
-        BringWindowToTop(ui); // only do this for crosshair overlay
+        BringWindowToTop(ui);
     }
 
     // unload everything

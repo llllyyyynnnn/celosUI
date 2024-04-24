@@ -207,6 +207,7 @@
     <ClCompile Include="ui\wrappers\ImGui\Checkbox.cpp" />
     <ClCompile Include="ui\wrappers\ImGui\ColorPicker.cpp" />
     <ClCompile Include="ui\wrappers\ImGui\Combo.cpp" />
+    <ClCompile Include="ui\wrappers\ImGui\functions\AddFontFromFileTTF.cpp" />
     <ClCompile Include="ui\wrappers\ImGui\functions\RenderSymbols.cpp" />
     <ClCompile Include="ui\wrappers\ImGui\functions\RenderFrameAnimated.cpp" />
     <ClCompile Include="ui\wrappers\ImGui\functions\RenderFrameBorderAnimated.cpp" />

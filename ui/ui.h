@@ -48,7 +48,7 @@ namespace celosia {
 
 	namespace variables {
 		inline static const char* title = "ui";
-		inline static const char* version = "DEBUG";
+		inline static const char* version = "DEBUG"; // ctodo: turn into a struct / class
 		
 		namespace config {
 			inline std::unordered_map<std::string, int> ints;
