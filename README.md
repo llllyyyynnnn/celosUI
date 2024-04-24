@@ -30,7 +30,7 @@ A heavily modified version of ImGui with added functionality.
 * for animations using renderframeanimations, add an index that is reset on every frame to avoid mixing up
 
 > Issues
-* Fonts are required to be in the same folder as the executable. They will not work if executed from Visual Studio.
+* Fonts are required to be in the same folder as the executable and can be found within the assets folder. They will not work if executed from Visual Studio.
 
 ![screenshot](assets/preview.png)
 
