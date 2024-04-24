@@ -21,6 +21,7 @@ A heavily modified version of ImGui with added functionality.
 * Theme Lerp & PushStyleColor / Var
 * Color Picker
 * Scrollbar.h
+* Cross platform support
 
 > Optional
 * redo font spacing code
