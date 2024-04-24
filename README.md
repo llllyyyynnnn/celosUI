@@ -11,6 +11,7 @@ A heavily modified version of ImGui with added functionality.
 * Custom theme support
 * DirectX 11
 * New font system
+* Tabs
   
 > To implement
 * InputSystem
