@@ -32,4 +32,6 @@ A heavily modified version of ImGui with added functionality.
 > Issues
 * Fonts are required to be in the same folder as the executable. They will not work if executed from Visual Studio.
 
+![screenshot](assets/preview.png)
+
 To find todo's, search all files for "CTODO". This was in order to prevent ImGui's todos from interfering with my own.
