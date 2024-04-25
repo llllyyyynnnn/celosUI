@@ -1,7 +1,7 @@
 # CelosUI
 A heavily modified version of ImGui with added functionality.
 
-> Current features
+## Current features
 * All of the ImGui features
 * Animations
 * New and improved widgets and components
@@ -13,7 +13,7 @@ A heavily modified version of ImGui with added functionality.
 * New font system
 * Tabs
   
-> To implement
+## To implement
 * InputSystem
 * Freetype
 * Image Loading
@@ -25,14 +25,14 @@ A heavily modified version of ImGui with added functionality.
 * Other rendering backends for compatibility
 * Shader support
 
-> Optional
+## Optional
 * redo font spacing code
 * redo gradient code
 * redo imgui::endchild pushclip, combo pushclip, begin pushbclip
 * RenderFrameFunctions
 * for animations using renderframeanimations, add an index that is reset on every frame to avoid mixing up
 
-> Issues
+## Issues
 * Fonts are required to be in the same folder as the executable and can be found within the assets folder. They will not work if executed from Visual Studio.
 * Adding rounding to a Win32 window that has blur will result in weird looking edges (solution is to use an actual blur shader, which I have not added support for yet)
 
