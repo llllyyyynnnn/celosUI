@@ -32,7 +32,7 @@ A heavily modified version of ImGui with added functionality.
 * RenderFrameFunctions
 * for animations using renderframeanimations, add an index that is reset on every frame to avoid mixing up
 
-## Issues
+## Known issues
 * Fonts are required to be in the same folder as the executable and can be found within the assets folder. They will not work if executed from Visual Studio.
 * Adding rounding to a Win32 window that has blur will result in weird looking edges (solution is to use an actual blur shader, which I have not added support for yet)
 
