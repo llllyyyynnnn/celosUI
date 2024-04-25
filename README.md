@@ -23,6 +23,7 @@ A heavily modified version of ImGui with added functionality.
 * Scrollbar.h
 * Linux support
 * Other rendering backends for compatibility
+* Shader support
 
 > Optional
 * redo font spacing code
@@ -33,6 +34,7 @@ A heavily modified version of ImGui with added functionality.
 
 > Issues
 * Fonts are required to be in the same folder as the executable and can be found within the assets folder. They will not work if executed from Visual Studio.
+* Adding rounding to a Win32 window that has blur will result in weird looking edges (solution is to use an actual blur shader, which I have not added support for yet)
 
 ![screenshot](assets/preview.png)
 
