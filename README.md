@@ -22,6 +22,7 @@ A heavily modified version of ImGui with added functionality.
 * Color Picker
 * Scrollbar.h
 * Linux support
+* Other rendering backends for compatibility
 
 > Optional
 * redo font spacing code
