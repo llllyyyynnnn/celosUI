@@ -200,6 +200,7 @@
     <ClCompile Include="external\imgui\win32\imgui_impl_win32.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ui\initialize.cpp" />
+    <ClCompile Include="ui\inputsystem.cpp" />
     <ClCompile Include="ui\render\text.cpp" />
     <ClCompile Include="ui\style\accents.cpp" />
     <ClCompile Include="ui\wrappers\ImGui\AddRectFilledHalfRounded.cpp" />

@@ -21,6 +21,8 @@ namespace celosia::initialize {
 
         style::themes::initialize();
         style::themes::set(style::themes::dark);
+
+        inputsystem::key::watch(VK_LBUTTON);
     }
 
     void fonts() { // ctodo: add bytes into a .h file so there's no need for external files
@@ -36,6 +38,8 @@ namespace celosia::initialize {
 
 namespace celosia::ui {
     void begin() {
+        inputsystem::refresh();
+
         ImGui_ImplDX11_NewFrame();
         ImGui_ImplWin32_NewFrame();
         ImGui::NewFrame();

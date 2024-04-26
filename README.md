@@ -12,9 +12,9 @@ A heavily modified version of ImGui with added functionality.
 * DirectX 11
 * New font system
 * Tabs
-  
-## To implement
 * InputSystem
+
+## To implement
 * Freetype
 * Image Loading
 * Button Layout (Tabs)
@@ -27,7 +27,6 @@ A heavily modified version of ImGui with added functionality.
 
 ## Optional
 * redo font spacing code
-* redo gradient code
 * redo imgui::endchild pushclip, combo pushclip, begin pushbclip
 * RenderFrameFunctions
 * for animations using renderframeanimations, add an index that is reset on every frame to avoid mixing up

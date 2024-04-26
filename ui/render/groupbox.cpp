@@ -16,6 +16,7 @@ namespace celosia::render::groupbox {
 			offset_max->y - offset->y
 		};
 	}
+
 	void return_two(ImVec2* offset, ImVec2* offset_max, ImVec2* offset_size) {
 		float size = ((ui::size.y - style::titlebar::height) / 2) - style::frame::size_padding.y;
 

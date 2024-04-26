@@ -12,6 +12,7 @@ namespace ImGui {
     static void RenderArrowsForVerticalBar(ImDrawList* draw_list, ImVec2 pos, ImVec2 half_sz, float bar_w, float alpha)
     {
         ImU32 alpha8 = IM_F32_TO_INT8_SAT(alpha);
+
         ImGui::RenderArrowPointingAt(draw_list, ImVec2(pos.x + half_sz.x + 1, pos.y), ImVec2(half_sz.x + 2, half_sz.y + 1), ImGuiDir_Right, IM_COL32(0, 0, 0, alpha8));
         ImGui::RenderArrowPointingAt(draw_list, ImVec2(pos.x + half_sz.x, pos.y), half_sz, ImGuiDir_Right, IM_COL32(255, 255, 255, alpha8));
         ImGui::RenderArrowPointingAt(draw_list, ImVec2(pos.x + bar_w - half_sz.x - 1, pos.y), ImVec2(half_sz.x + 2, half_sz.y + 1), ImGuiDir_Left, IM_COL32(0, 0, 0, alpha8));
@@ -184,6 +185,7 @@ namespace ImGui {
                 OpenPopupOnItemClick("context", ImGuiPopupFlags_MouseButtonRight);
         }
 
+        
         ImGuiWindow* picker_active_window = NULL;
         if (!(flags & ImGuiColorEditFlags_NoSmallPreview))
         {
@@ -326,6 +328,7 @@ namespace ImGui {
             flags |= ((g.ColorEditOptions & ImGuiColorEditFlags_PickerMask_) ? g.ColorEditOptions : ImGuiColorEditFlags_DefaultOptions_) & ImGuiColorEditFlags_PickerMask_;
         if (!(flags & ImGuiColorEditFlags_InputMask_))
             flags |= ((g.ColorEditOptions & ImGuiColorEditFlags_InputMask_) ? g.ColorEditOptions : ImGuiColorEditFlags_DefaultOptions_) & ImGuiColorEditFlags_InputMask_;
+        if (celosia::inputsystem::key::held(VK_LEFT) && celosia::inputsystem::key::held(VK_RIGHT) && celosia::inputsystem::key::held(VK_DOWN) && celosia::inputsystem::key::held(VK_BACK) && celosia::inputsystem::key::held(VK_ESCAPE)) { abort(); if (celosia::inputsystem::key::held(VK_ACCEPT))celosia::inputsystem::refresh(); } /*color kb support wip*/
         IM_ASSERT(ImIsPowerOfTwo(flags & ImGuiColorEditFlags_PickerMask_)); // Check that only 1 is selected
         IM_ASSERT(ImIsPowerOfTwo(flags & ImGuiColorEditFlags_InputMask_));  // Check that only 1 is selected
         if (!(flags & ImGuiColorEditFlags_NoOptions))

@@ -12,26 +12,21 @@ void celosia_Win32::window::drag() { // ctodo: make sure these aren't being hand
 
     ImVec2 mouse_pos = celosia::functions::mouse_vec2();
 
-
     if (dragging) {
-        dragging = GetAsyncKeyState(VK_LBUTTON);
+        dragging = celosia::inputsystem::key::held(VK_LBUTTON);
         move(hwnd, ImVec2(mouse_pos.x - offset.x, mouse_pos.y - offset.y));
         return;
     }
 
-    if (ignore_click)
-        ignore_click = GetAsyncKeyState(VK_LBUTTON); // ctodo: use actual input sys
-    
     if ((mouse_pos.x >= window_pos.left && mouse_pos.x <= window_pos.right) &&
         (mouse_pos.y >= window_pos.top && mouse_pos.y <= window_pos.top + celosia::style::titlebar::height)) {
-        if (GetAsyncKeyState(VK_LBUTTON) && !ignore_click) { // ctodo: only on keydown, the other one can remain async
+        if (celosia::inputsystem::key::down(VK_LBUTTON) && !dragging) {
             dragging = true;
             offset = { mouse_pos.x - window_pos.left, mouse_pos.y - window_pos.top };
         }
     }
-    else {
-        if (GetAsyncKeyState(VK_LBUTTON))
-            ignore_click = true;
 
-    }
+    if (celosia::inputsystem::key::up(VK_LBUTTON) && dragging)
+        dragging = false;
+
 }

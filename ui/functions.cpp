@@ -18,7 +18,7 @@ namespace celosia::functions {
 
 	ImVec2 mouse_vec2() {
 		POINT p;
-		if (GetCursorPos(&p))
+		if (GetCursorPos(&p)) // ctodo: will only work on windows
 			return ImVec2(p.x, p.y);
 		else
 			return ImVec2(0, 0);
@@ -27,10 +27,6 @@ namespace celosia::functions {
 	bool hovered(const ImVec2& pos1, const ImVec2& pos2) {
 		ImVec2 mouse_pos = ImGui::GetMousePos();
 		return ((mouse_pos.x >= pos1.x && mouse_pos.x <= pos2.x) && (mouse_pos.y >= pos1.y && mouse_pos.y <= pos2.y));
-	}
-
-	void update_hotkeys() {
-		//ctodo: add input system
 	}
 
 	void spacing(int amount) {
@@ -43,15 +39,18 @@ namespace celosia::functions {
 		if (val < min) val = min;
 		return val;
 	}
+
 	float clamp(float val, const float& min, const float& max) {
 		if (val > max) val = max;
 		if (val < min) val = min;
 		return val;
 	}
+
 	void clamp(int* val, const int& min, const int& max) {
 		if (*val > max) *val = max;
 		if (*val < min) *val = min;
 	}
+
 	void clamp(float* val, const float& min, const float& max) {
 		if (*val > max) *val = max;
 		if (*val < min) *val = min;

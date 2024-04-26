@@ -130,18 +130,14 @@ bool ImGui::Selectable(const char* label, bool selected, ImGuiSelectableFlags fl
 
     //const ImU32 col = GetColorU32((held && hovered) ? ImGuiCol_HeaderActive : hovered ? ImGuiCol_HeaderHovered : ImGuiCol_Header);
     ImColor col = GetColorU32(ImGuiCol_WindowBg);
+    
     if (selected) col = GetColorU32(ImGuiCol_Header);
-
-    if (pressed ||held) col = GetColorU32(ImGuiCol_HeaderActive);
-        if (hovered) col = GetColorU32(ImGuiCol_HeaderHovered);
-
+    if (hovered) col = GetColorU32(ImGuiCol_HeaderHovered);
+    if (pressed || held) col = GetColorU32(ImGuiCol_HeaderActive);
+    
     RenderFrameAnimated(label, bb.Min, bb.Max, col, false, 0.0f);
 
     // Render
-    if (hovered || selected)
-    {
-        
-    }
     if (g.NavId == id)
         RenderNavHighlight(bb, id, ImGuiNavHighlightFlags_TypeThin | ImGuiNavHighlightFlags_NoRounding);
 

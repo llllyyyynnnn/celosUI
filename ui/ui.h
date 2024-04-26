@@ -1,6 +1,8 @@
+// CTODO: check this out & changes here take a while to compile as a result of it being included everywhere
+
 #pragma once
 #define IMGUI_DEFINE_MATH_OPERATORS
-#define _CRT_SECURE_NO_WARNINGS // CTODO: check this out & changes here take a while to compile as a result of it being included everywhere
+#define _CRT_SECURE_NO_WARNINGS
 
 #include <Windows.h>
 #include <d3d11.h>
@@ -124,6 +126,29 @@ namespace celosia {
 		void clamp(int* val, const int& min, const int& max);
 		void clamp(float* val, const float& min, const float& max);
 	}
-}
 
-// ctodo = todo's
+	namespace inputsystem {
+		namespace registry {
+			inline std::unordered_map<DWORD, bool> down; // should probably clear these occasionally
+			inline std::unordered_map<DWORD, bool> up;
+			inline std::unordered_map<DWORD, bool> watched; // keys that are actively being refreshed globally
+		}
+
+		namespace key {
+			bool down(const DWORD& key);
+			bool up(const DWORD& key);
+			bool held(const DWORD& key);
+
+			void watch(const DWORD& key);   // will add to an array that is constantly being checked, unlike others that depend on functions to watch for them
+											// this is only efficient if you are trying to monitor the same key in multiple places and don't want to call getasynckeystate each time, or just for easier management of it
+											// it is also important to use for first calls on key::down as there's an issue where it detects a key being held down as just being pressed, which it wasn't
+											// this is due to the lack of data from not being watched
+			void unwatch(const DWORD& key);
+		}
+
+		void refresh();		// any references such as watched[KEY] will end up creating the key
+							// unintended, CTODO: fix
+							// or use watched.find / watched.at as these won't create a reference
+							// this has to be ran every frame
+	}
+}

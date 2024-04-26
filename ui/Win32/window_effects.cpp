@@ -3,21 +3,19 @@
 namespace celosia_Win32::window {
     void enable_transparency(HWND hwnd) { // 0, 0, 0, 0 will turn invisible
         SetLayeredWindowAttributes(hwnd, RGB(0, 0, 0), BYTE(255), LWA_ALPHA);
-        {
-            RECT clarea{}; GetClientRect(hwnd, &clarea);
-            RECT warea{}; GetWindowRect(hwnd, &warea);
+        RECT clarea{}; GetClientRect(hwnd, &clarea);
+        RECT warea{}; GetWindowRect(hwnd, &warea);
 
-            POINT difference{};
-            ClientToScreen(hwnd, &difference);
+        POINT difference{};
+        ClientToScreen(hwnd, &difference);
 
-            const MARGINS margin{
-                warea.left + difference.x - warea.left,
-                warea.top + difference.y - warea.top,
-                clarea.right, clarea.bottom
-            };
+        const MARGINS margin{
+            warea.left + difference.x - warea.left,
+            warea.top + difference.y - warea.top,
+            clarea.right, clarea.bottom
+        };
 
-            DwmExtendFrameIntoClientArea(hwnd, &margin);
-        }
+        DwmExtendFrameIntoClientArea(hwnd, &margin);
     }
 
     void enable_blur(HWND hwnd, int accent) {

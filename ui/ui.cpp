@@ -25,12 +25,11 @@ namespace celosia::ui { // ctodo: move this to render
         }
         else {
             render::groupbox::begin("Groupbox B");
-            //ImGui::ColorEdit4("Main Color", color, ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_NoTooltip | ImGuiColorEditFlags_NoSidePreview /*| ImGuiColorEditFlags_AlphaBar*/); // ctodo: remake this
-            //style::general::main_color = { color[0], color[1], color[2], color[3] };
-
-
             const char* test[] = {"Item A", "Item B", "Item C"};
             ImGui::Combo("test", &variables::config::ints["test_combo"], test, 3, 3);
+
+            ImGui::ColorEdit4("Main Color", color, ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_NoTooltip | ImGuiColorEditFlags_NoSidePreview /*| ImGuiColorEditFlags_AlphaBar*/); // ctodo: remake this
+            style::general::main_color = { color[0], color[1], color[2], color[3] };
 
             render::groupbox::end();
         }

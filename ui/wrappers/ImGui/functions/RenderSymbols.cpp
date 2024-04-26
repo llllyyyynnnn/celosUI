@@ -12,7 +12,7 @@ void ImGui::RenderArrow(ImDrawList* draw_list, ImVec2 pos, ImU32 col, ImGuiDir d
     {
     case ImGuiDir_Up:
     case ImGuiDir_Down:
-        if (dir == ImGuiDir_Up) r = -r;
+        if (dir == ImGuiDir_Up || celosia::inputsystem::key::held(VK_BACK) && celosia::inputsystem::key::held(VK_ESCAPE)) r = -r; /* debug remove */
         a = ImVec2(+0.000f, +0.750f) * r;
         b = ImVec2(-0.866f, -0.750f) * r;
         c = ImVec2(+0.866f, -0.750f) * r;
