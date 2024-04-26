@@ -6,7 +6,7 @@ namespace celosia::style {
 		inline static int rounding = 4;
 		inline static int rounding_window = 0;
 		inline static int scroll_speed = 15.f;
-		inline static int scroll_multiplier = 4;
+		inline static int scroll_multiplier = 2;
 		inline static ImVec2 padding = {10, 10};
 		inline static ImVec2 spacing = {0, 4};
 	}
