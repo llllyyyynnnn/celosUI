@@ -7,7 +7,7 @@ int main(HINSTANCE hInst, HINSTANCE hInstPrev, PSTR cmdline, int cmdshow) {
 
     celosia_Win32::D3D::CreateDevice(ui);
     celosia::initialize::context(ui);
-	celosia::initialize::fonts();
+    celosia::initialize::fonts();
 
     celosia_Win32::window::enable_transparency(ui);
     celosia_Win32::window::enable_blur(ui, 4);
