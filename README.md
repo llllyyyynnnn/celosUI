@@ -36,7 +36,7 @@ A heavily modified version of ImGui with added functionality.
 * Fonts are required to be in the same folder as the executable and can be found within the assets folder. They will not work if executed from Visual Studio.
 * Adding rounding to a Win32 window that has blur will result in weird looking edges (solution is to use an actual blur shader, which I have not added support for yet)
 * Selectable objects will not update colors as a result of the currently broken theme switcher. I've decided to ignore it for now as it will get overwritten regardless.
-* Keydown events will overwrite eachother if watching the same key
+* Keydown events will overwrite each other if watching the same key
 
 ![screenshot](assets/preview.png)
 
